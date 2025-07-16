@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>vestiaunit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dynalight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script>
+        gsap.registerPlugin(TextPlugin);
+    </script>
+    <script src="https://unpkg.com/split-type"></script>
+
+</head>
+
+<body class="bg-[#171717] text-white">
+    <section class="font-montserrat font-semibold w-full h-[100px] flex items-center justify-center fixed z-50">
+        <nav>
+            <ul class="flex text-center gap-9 text-4xl">
+                <li><a href="#">Home</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#asset">Asset</a></li>
+                <li><a href="#">Member</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="h-screen w-full flex justify-center items-center">
+        <div>
+            <div class="font-montserrat font-black lg:text-[200px] flex flex-col md:text-[100px] sm:text-[100px]">
+                <span class="leading-none">
+                    Welome to
+                </span>
+                <span class="flex justify-center leading-none">V.camp</span>
+            </div>
+        </div>
+        <div class="absolute bottom-20 right-20 font-montserrat font-semibold">
+            <a href="#info
+            ">
+                <div class="button text-center flex items-center justify-center">Next ></div>
+            </a>
+        </div>
+    </section>
+
+    <section class="h-screen w-full flex justify-center items-center" id="info">
+        <div class="font-montserrat">
+            <div class="font-black text-8xl mb-[100px]">About Us</div>
+            <div class="flex gap-9 lg:flex-row sm:flex-col">
+                <div>
+                    <img class="rounded-xl rotate-[5deg] w-auto h-[400px]" src="img/vestia.jpg" alt="">
+                </div>
+                <div class="font-semibold flex w-[500px] lg:text-5xl sm:text-2xl typewriter">Angkin love zeta V.camp is an editing community founded on July 21,
+                    2022.
+                    The letter "V" stands for Vestia, derived from the VTuber character Vestia Zeta.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-screen w-full flex flex-col pt-20 justify-center items-center relative" id="asset">
+        <div class="font-montserrat">
+            <div class="font-black lg:text-9xl top-9 mt-[90px] absolute inset-0 justify-center flex sm:text-7xl">Logo & Intro</div>
+            <div class="flex justify-center items-center flex-col absolute inset-0">
+                <div>
+                    <img class="w-auto lg:h-screen lg:mt-0 inset-1 flex justify-center items-center sm:h-[80vh] sm:mt-[190px]" src="img/Vestia_zeta.png"
+                        alt="">
+                </div>
+                <div class="h-screen bg-gradient-to-b from-transparent to-[#171717] absolute inset-0">
+                </div>
+            </div>
+            <div class="flex justify-center items-center absolute mt-[500px] gap-[90px] inset-0">
+                <div class="">
+                    <img class="w-auto h-[150px]" src="img/new_logo.png" alt="">
+                </div>
+                <div>
+                    <img class="w-auto h-[150px]" src="img/Logo_icon.png" alt="">
+                </div>
+                <div>
+                    <img class="w-auto h-[150px]" src="img/New_logo_vestia.png" alt="">
+                </div>
+                <div class="absolute right-20 bottom-20">
+                    <a href="#">
+                        <div>Get Intro/Logo</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-screen w-full flex flex-col pt-20 justify-center items-center relative">
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
