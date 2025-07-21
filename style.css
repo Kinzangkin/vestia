@@ -14,6 +14,23 @@
     animation: scrollX var(--duration) linear infinite;
     animation-delay: calc(var(--duration)/var(--totalitems) * (var(--totalitems) - var(--i)) * -1);
 }
+.desktop-container {
+            display: block;
+        }
+
+        .mobile-container {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-container {
+                display: none;
+            }
+
+            .mobile-container {
+                display: block;
+            }
+        }
 
 .bg-img {
     background-image: url(img/image.png);

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>vestiaunit</title>
+    <title>vestiaunit - Responsive v2</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -20,85 +20,164 @@
         gsap.registerPlugin(TextPlugin);
     </script>
     <script src="https://unpkg.com/split-type"></script>
-
 </head>
 
-<body class="bg-[#171717] text-white">
-    <section class="font-montserrat font-semibold w-full h-[100px] flex items-center justify-center fixed z-50">
-        <nav>
-            <ul class="flex text-center gap-9 text-4xl">
-                <li><a href="#">Home</a></li>
-                <li><a href="#info">Info</a></li>
-                <li><a href="#asset">Asset</a></li>
-                <li><a href="#">Member</a></li>
-            </ul>
-        </nav>
-    </section>
+<body class="bg-[#171717] text-white overflow-x-hidden">
 
-    <section class="h-screen w-full flex justify-center items-center">
-        <div>
-            <div class="font-montserrat font-black lg:text-[200px] flex flex-col md:text-[100px] sm:text-[100px]">
-                <span class="leading-none">
-                    Welome to
-                </span>
-                <span class="flex justify-center leading-none">V.camp</span>
+    <div class="desktop-container">
+        <section
+            class="font-montserrat font-semibold w-full h-[100px] flex items-center justify-center bg-[#171717] fixed z-50 px-4">
+            <nav>
+                <ul class="flex text-center gap-9 text-4xl sm:gap-6 sm:text-2xl md:text-3xl">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#asset">Asset</a></li>
+                    <li><a href="#">Member</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="min-h-screen w-full flex flex-col justify-center items-center">
+            <div>
+                <div class="font-montserrat font-black flex flex-col sm:text-[80px] md:text-[100px] lg:text-[200px]">
+                    <span class="leading-none block">
+                        Welome to
+                    </span>
+                    <span class="flex justify-center leading-none block">V.camp</span>
+                </div>
             </div>
-        </div>
-        <div class="absolute bottom-20 right-20 font-montserrat font-semibold">
-            <a href="#info
-            ">
-                <div class="button text-center flex items-center justify-center">Next ></div>
+            <div class="absolute bottom-20 right-20 font-montserrat font-semibold">
+                <a href="#info
+                ">
+                    <div class="button text-center flex items-center justify-center">Next ></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="h-screen w-full flex justify-center items-center" id="info">
+            <div class="font-montserrat">
+                <div class="font-black text-8xl mb-[100px]">About Us</div>
+                <div class="flex gap-9 lg:flex-row sm:flex-col">
+                    <div>
+                        <img class="rounded-xl rotate-[5deg] w-auto h-[400px]" src="img/vestia.jpg" alt="">
+                    </div>
+                    <div class="font-semibold flex w-[500px] lg:text-5xl sm:text-2xl typewriter">Angkin love zeta V.camp
+                        is an editing community founded on July 21,
+                        2022.
+                        The letter "V" stands for Vestia, derived from the VTuber character Vestia Zeta.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="h-screen w-full flex flex-col pt-20 justify-center items-center relative" id="asset">
+            <div class="font-montserrat">
+                <div class="font-black lg:text-9xl top-9 mt-[90px] absolute inset-0 justify-center flex sm:text-7xl">
+                    Logo & Intro</div>
+                <div class="flex justify-center items-center flex-col absolute inset-0">
+                    <div>
+                        <img class="w-auto lg:h-screen lg:mt-0 inset-1 flex justify-center items-center sm:h-[80vh] sm:mt-[190px]"
+                            src="img/Vestia_zeta.png" alt="">
+                    </div>
+                    <div class="h-screen bg-gradient-to-b from-transparent to-[#171717] absolute inset-0">
+                    </div>
+                </div>
+                <div class="flex justify-center items-center absolute mt-[500px] gap-[90px] inset-0">
+                    <div class="">
+                        <img class="w-auto h-[150px]" src="img/new_logo.png" alt="">
+                    </div>
+                    <div>
+                        <img class="w-auto h-[150px]" src="img/Logo_icon.png" alt="">
+                    </div>
+                    <div>
+                        <img class="w-auto h-[150px]" src="img/New_logo_vestia.png" alt="">
+                    </div>
+                    <div class="absolute right-20 bottom-20">
+                        <a href="#">
+                            <div>Get Intro/Logo</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="h-screen w-full flex flex-col pt-20 justify-center items-center relative">
+
+        </section>
+    </div>
+
+    <div class="mobile-container">
+
+        <section class="font-montserrat font-semibold w-full h-[80px] flex items-center justify-center fixed z-50 bg-[#171717] px-4 shadow-md">
+            <nav>
+                <ul class="flex text-center gap-6 text-lg sm:gap-8 sm:text-2xl md:text-3xl">
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors duration-300">Home</a></li>
+                    <li><a href="#info" class="hover:text-yellow-400 transition-colors duration-300">Info</a></li>
+                    <li><a href="#asset" class="hover:text-yellow-400 transition-colors duration-300">Asset</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors duration-300">Member</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="hero" class="min-h-screen w-full flex flex-col justify-center items-center text-center px-6 pt-28 bg-gradient-to-b from-[#1a1a1a] to-[#171717]">
+            <div>
+                <div id="hero-title" class="font-montserrat font-extrabold text-[48px] sm:text-[72px] md:text-[96px] leading-tight tracking-wide drop-shadow-lg opacity-0">
+                    <span class="block">Welcome to</span>
+                    <span class="block">V.camp</span>
+                </div>
+            </div>
+            <div class="mt-12">
+                <a href="#info">
+                    <div id="hero-button" class="button bg-yellow-500 hover:bg-yellow-600 text-black font-bold rounded-full px-8 py-3 shadow-lg transition duration-300 ease-in-out cursor-pointer select-none opacity-0">
+                        Next >
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="info" class="min-h-screen w-full flex justify-center items-center px-6 py-16 bg-[#222222]">
+            <div class="font-montserrat max-w-4xl w-full">
+                <div id="about-title" class="font-black text-3xl sm:text-4xl text-center mb-8 drop-shadow-md opacity-0">About Us</div>
+                <div class="flex flex-col gap-8 lg:flex-row items-center">
+                    <img class="rounded-xl rotate-[5deg] w-full max-w-xs h-auto shadow-lg" src="img/vestia.jpg" alt="About Us Image">
+                    <p id="about-text" class="font-semibold text-base sm:text-lg mt-6 lg:mt-0 max-w-xl text-center lg:text-left text-white/90 leading-relaxed opacity-0">
+                        V.camp is an editing community founded on July 21, 2022. The letter "V" stands for Vestia, derived from the VTuber character Vestia Zeta.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Asset -->
+        <section id="asset" class="min-h-screen w-full flex flex-col justify-center items-center relative pt-32 px-6 bg-gradient-to-b from-[#171717] to-[#000000]">
+            <h2 id="asset-title" class="font-montserrat font-black text-4xl sm:text-6xl text-center mb-12 z-10 opacity-0">Logo & Intro</h2>
+
+            <div class="relative z-10 flex flex-wrap justify-center gap-8 mb-24">
+                <img class="w-[110px] sm:w-[130px] h-auto shadow-lg rounded-lg" src="img/new_logo.png" alt="Logo 1">
+                <img class="w-[110px] sm:w-[130px] h-auto shadow-lg rounded-lg" src="img/Logo_icon.png" alt="Logo 2">
+                <img class="w-[110px] sm:w-[130px] h-auto shadow-lg rounded-lg" src="img/New_logo_vestia.png" alt="Logo 3">
+            </div>
+
+            <a href="#" class="z-10 mt-6">
+                <div id="asset-button" class="button-gradient text-center px-6 py-3 rounded-full font-semibold cursor-pointer hover:bg-yellow-600 transition duration-300 ease-in-out shadow-lg opacity-0">
+                    Get Intro/Logo
+                </div>
             </a>
-        </div>
-    </section>
 
-    <section class="h-screen w-full flex justify-center items-center" id="info">
-        <div class="font-montserrat">
-            <div class="font-black text-8xl mb-[100px]">About Us</div>
-            <div class="flex gap-9 lg:flex-row sm:flex-col">
-                <div>
-                    <img class="rounded-xl rotate-[5deg] w-auto h-[400px]" src="img/vestia.jpg" alt="">
-                </div>
-                <div class="font-semibold flex w-[500px] lg:text-5xl sm:text-2xl typewriter">Angkin love zeta V.camp is an editing community founded on July 21,
-                    2022.
-                    The letter "V" stands for Vestia, derived from the VTuber character Vestia Zeta.</div>
+            <!-- Background + Overlay -->
+            <div class="absolute inset-0">
+                <img class="w-full h-full object-cover opacity-20" src="img/Vestia_zeta.png" alt="Background Image">
+                <div class="h-full w-full absolute inset-0 bg-gradient-to-b from-transparent to-[#171717]"></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="h-screen w-full flex flex-col pt-20 justify-center items-center relative" id="asset">
-        <div class="font-montserrat">
-            <div class="font-black lg:text-9xl top-9 mt-[90px] absolute inset-0 justify-center flex sm:text-7xl">Logo & Intro</div>
-            <div class="flex justify-center items-center flex-col absolute inset-0">
-                <div>
-                    <img class="w-auto lg:h-screen lg:mt-0 inset-1 flex justify-center items-center sm:h-[80vh] sm:mt-[190px]" src="img/Vestia_zeta.png"
-                        alt="">
-                </div>
-                <div class="h-screen bg-gradient-to-b from-transparent to-[#171717] absolute inset-0">
-                </div>
-            </div>
-            <div class="flex justify-center items-center absolute mt-[500px] gap-[90px] inset-0">
-                <div class="">
-                    <img class="w-auto h-[150px]" src="img/new_logo.png" alt="">
-                </div>
-                <div>
-                    <img class="w-auto h-[150px]" src="img/Logo_icon.png" alt="">
-                </div>
-                <div>
-                    <img class="w-auto h-[150px]" src="img/New_logo_vestia.png" alt="">
-                </div>
-                <div class="absolute right-20 bottom-20">
-                    <a href="#">
-                        <div>Get Intro/Logo</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Placeholder Section -->
+        <section class="h-screen w-full flex justify-center items-center bg-[#111111]">
+            <div class="text-center text-2xl text-white/50">More sections coming soon...</div>
+        </section>
 
-    <section class="h-screen w-full flex flex-col pt-20 justify-center items-center relative">
+    </div>
 
-    </section>
     <script src="script.js"></script>
 </body>
+
 </html>
